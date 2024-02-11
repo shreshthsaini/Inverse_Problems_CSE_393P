@@ -7534,11 +7534,11 @@ a.anchor-link {
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
 <h4 id="-Problem-1:-1D-Heat-Equation-"><div align="center"> Problem-1: 1D Heat Equation </div><a class="anchor-link" href="#-Problem-1:-1D-Heat-Equation-">¶</a></h4><h4 id="Given:">Given:<a class="anchor-link" href="#Given:">¶</a></h4><p>$$
 \left\{
-\begin{aligned}
+\begin{align}
 \frac{\partial u}{\partial t} - k \frac{\partial^2 u}{\partial x^2} &amp;= 0, &amp; 0 &lt; x &lt; L,\ 0 &lt; t &lt; T \\
 u(x, 0) &amp;= m(x), &amp; 0 &lt; x &lt; L \\
 u(0, t) = u(L, t) &amp;= 0, &amp; 0 &lt; t &lt; T \tag{1.1}
-\end{aligned}
+\end{align}
 \right.
 $$</p>
 <p>We are given the 1D heat equation with the initial condition $m(x)$ and boundary conditions $u(0, t) = u(L, t) = 0$.
@@ -7879,10 +7879,10 @@ Results are shown in Figure-2 as outout plot from cell below.</p>
 <h4 id="Given:">Given:<a class="anchor-link" href="#Given:">¶</a></h4><p>Given $m(x)$, we can find $u(x)$ by solving the Poisson's equation that is a elliptic PDE for axia displacement $u(x)$:</p>
 <p>$$
 \left\{
-\begin{aligned}
+\begin{align}
 -k\frac{\partial^2 u}{\partial x^2} &amp;= m(x), 0 &lt; x &lt; L \\
 u(0) &amp;= u(L) = 0 \tag{2.1}
-\end{aligned}
+\end{align}
 \right.
 $$</p>
 <p>Here, $k$ is the elastic modulus of the rod and rod is fixed. Therefore, parameter-to-observable map $\mathcal F(m)$ is given as:</p>
@@ -7890,10 +7890,10 @@ $$</p>
 <p>For simplification, let $-k\frac{\partial^2 }{\partial x^2}$ be $\mathcal L$:</p>
 <p>$$
 \left\{
-\begin{aligned}
+\begin{align}
 \mathcal L u &amp;= m(x), 0 &lt; x &lt; L \\
 u(0) &amp;= u(L) = 0 
-\end{aligned} \tag{2.3}
+\end{align} \tag{2.3}
 \right.
 $$</p>
 <p>Therefore,</p>
@@ -8676,12 +8676,12 @@ We generate the synthetic data $d$ using the true body force $m_{true}$ and addi
 <h4 id="-Problem-3:-Inverse-Problem-for-wave-equation-(1D)"><div align="center"> Problem-3: Inverse Problem for wave equation (1D)</div><a class="anchor-link" href="#-Problem-3:-Inverse-Problem-for-wave-equation-(1D)">¶</a></h4><h4 id="Given:">Given:<a class="anchor-link" href="#Given:">¶</a></h4><p>Hyperbolic PED for wave equation is given by:</p>
 <p>$$
 \left\{
-\begin{aligned}
+\begin{align}
 \frac{\partial^2 u}{\partial t^2} - c^2 \frac{\partial^2 u}{\partial x^2} &amp;= 0, &amp; 0 &lt; x &lt; L,\ 0 &lt; t &lt; T \\
 u(x, 0) &amp;= m(x), &amp; 0 &lt; x &lt; L \\
 \frac{\partial u}{\partial t}(x,0) &amp;= 0, &amp; 0 &lt; x &lt; L,
 u(0, t) = u(L, t) &amp;= 0, &amp; 0 &lt; t &lt; T \tag{3.1}
-\end{aligned}
+\end{align}
 \right.
 $$</p>
 <p>The stability of inverse problem for the initial condition $m(x)$ through observing the cable displacement $u(x, T)$. Therefore the parameter-to-observable operator is $\mathcal F(m) := u(x, T )$.</p>
